@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/SK_Design/static/css/main.38ff4006.css",
+    "main.js": "/SK_Design/static/js/main.64a460f5.js",
+    "static/js/787.a86f3764.chunk.js": "/SK_Design/static/js/787.a86f3764.chunk.js",
+    "static/media/FontsFree-Net-SF-UI-Display-Regular-1.ttf": "/SK_Design/static/media/FontsFree-Net-SF-UI-Display-Regular-1.720ea307ec457c77cb5b.ttf",
+    "index.html": "/SK_Design/index.html",
+    "main.38ff4006.css.map": "/SK_Design/static/css/main.38ff4006.css.map",
+    "main.64a460f5.js.map": "/SK_Design/static/js/main.64a460f5.js.map",
+    "787.a86f3764.chunk.js.map": "/SK_Design/static/js/787.a86f3764.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38ff4006.css",
+    "static/js/main.64a460f5.js"
+  ]
+}
