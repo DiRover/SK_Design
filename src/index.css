@@ -1,8 +1,28 @@
+@font-face {
+  font-family: 'SF UI Display';
+  src: url('../src/fonts/FontsFree-Net-SF-UI-Display-Regular-1.ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+:root {
+  --color-primary: #ffffff;
+  --color-black: black;
+  --color-secondary: #e3e3e3;
+  --color-main: #828282;
+  --color-item: #353238;
+  --color-active: #0076cf;
+  --color-error: #eb5e55;
+
+  --radius: 8px;
+  --border-weight: 2px;
+
+  --font-family: 'SF UI Display';
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF UI Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
