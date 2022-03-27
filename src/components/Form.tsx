@@ -19,6 +19,8 @@ import Select, { SelectProps } from './Select';
 import Button from './Button';
 import FieldText from './FieldText';
 import Validators from './validators';
+import CircularProgress from '@mui/material/CircularProgress';
+import { useState } from 'react';
 
 export interface subscriptionType {
   [key: string]: string;
@@ -37,16 +39,24 @@ const Container = styled.div`
   box-shadow: 0px 5px 20px 0px rgba(53, 50, 56, 0.14);
 `;
 
+const Spinner= styled(CircularProgress)({
+  color: 'white !important',
+});
+
 function Form(): JSX.Element {
+
+  const [loading, setLoading] = useState(false);
+
   const dispatch = useDispatch();
 
   const onSubmit = (val: subscriptionType, form: FormApi) => {
+    setLoading(true);
     setTimeout(() => {
-
       dispatch(addRequest(val));
 
       form.restart();
       console.log(JSON.stringify(val));
+      setLoading(false);
     }, 2000);
   };
 
@@ -197,7 +207,7 @@ function Form(): JSX.Element {
                 </Grid>
                 <Grid item>
                   <Button type='submit' disabled={!dirty}>
-                    Отправить заявку
+                    {loading ? <Spinner size={30} /> : 'Отправить заявку'}
                   </Button>
                 </Grid>
               </Grid>

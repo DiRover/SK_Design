@@ -23,7 +23,7 @@ const useStyles = (error: boolean) => makeStyles(() => createStyles({
       height: '50px',
     },
     '&:hover fieldset': {
-      borderColor: 'var(--color-active) !important',
+      borderColor: `${error ? 'inherent' : 'var(--color-active)'} !important`,
     },
 
     '& label': {
