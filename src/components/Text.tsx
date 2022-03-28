@@ -18,7 +18,7 @@ const Container = styled.div`
 `;
 
 const TextContainer = styled.div`
-  fontFamily: 'var(--font-family)',
+  fontFamily: 'var(--font-family)';
   font-style: normal;
   font-weight: 400;
   font-size: 0.8rem;
